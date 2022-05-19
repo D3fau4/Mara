@@ -16,8 +16,8 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: 5.0.x
+        dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet ./Mara.Lib/ restore
+      run: dotnet restore Mara.Lib
     - name: Build
-      run: dotnet ./Mara.Lib/ build --no-restore
+      run: dotnet build --no-restore Mara.Lib
