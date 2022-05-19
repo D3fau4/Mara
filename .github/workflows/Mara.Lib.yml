@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  Build test:
+  Build-Mara:
 
     runs-on: ubuntu-latest
 
